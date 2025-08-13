@@ -1,0 +1,91 @@
+/* Modern landing page styles for TeamFlow Docs */
+.landing-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+.landing-header {
+  padding-top: 80px;
+  text-align: center;
+}
+.landing-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #22223b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.landing-subtitle {
+  font-size: 1.5rem;
+  color: #4a4e69;
+  margin-bottom: 2rem;
+}
+.landing-cta {
+  background: linear-gradient(90deg, #5f6fff 0%, #3f37c9 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(63,55,201,0.12);
+  transition: background 0.2s, transform 0.2s;
+}
+.landing-cta:hover {
+  background: linear-gradient(90deg, #3f37c9 0%, #5f6fff 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+.landing-hero {
+  margin: 60px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing-logo {
+  width: 120px;
+  margin-bottom: 32px;
+  filter: drop-shadow(0 2px 12px #3f37c933);
+}
+.landing-features {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(34,34,59,0.07);
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 260px;
+  margin: 0.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.feature-card:hover {
+  box-shadow: 0 6px 32px rgba(63,55,201,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+.landing-footer {
+  margin-top: auto;
+  padding: 2rem 0 1rem 0;
+  color: #4a4e69;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.7;
+}
+@media (max-width: 800px) {
+  .landing-features {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .feature-card {
+    min-width: 180px;
+    max-width: 100%;
+  }
+}

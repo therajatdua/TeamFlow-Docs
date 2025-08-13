@@ -1,0 +1,177 @@
+/* Modern register page styles for TeamFlow Docs */
+.register-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+.register-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(63,55,201,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 340px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22223b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.register-input {
+  padding: 0.9rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #c3cfe2;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.register-input:focus {
+  border: 1.5px solid #5f6fff;
+}
+.register-btn {
+  background: linear-gradient(90deg, #5f6fff 0%, #3f37c9 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.register-btn:hover {
+  background: linear-gradient(90deg, #3f37c9 0%, #5f6fff 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.register-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+.register-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 40px rgba(63,55,201,0.13);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  min-width: 340px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.7s cubic-bezier(.23,1.01,.32,1) 1;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.register-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+.register-logo {
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 2px 12px #3f37c933);
+}
+.register-brand {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #3f37c9;
+  letter-spacing: 1px;
+}
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22223b;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  background: linear-gradient(90deg, #fff 60%, #e0e7ff 100%);
+  border: 1.5px solid #c3cfe2;
+  border-radius: 10px;
+  padding: 1.1rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #22223b;
+  cursor: pointer;
+  width: 100%;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 2px 12px #5f6fff11;
+}
+.google-btn:hover {
+  border: 1.5px solid #5f6fff;
+  background: linear-gradient(90deg, #e0e7ff 0%, #fff 100%);
+  box-shadow: 0 4px 24px #5f6fff22;
+}
+.google-icon {
+  width: 24px;
+  height: 24px;
+}
+.register-error {
+  color: #e63946;
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  background: #ffeaea;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+.register-footer-promo {
+  margin-top: 0.5rem;
+  color: #4a4e69;
+  font-size: 1.05rem;
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 0.2px;
+}
+.register-footer-promo a {
+  color: #3f37c9;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0.2rem;
+  transition: color 0.2s;
+}
+.register-footer-promo a:hover {
+  color: #22223b;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .register-card {
+    min-width: 90vw;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .register-title {
+    font-size: 1.3rem;
+  }
+}
