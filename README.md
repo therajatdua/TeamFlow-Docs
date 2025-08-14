@@ -215,3 +215,14 @@ Rajat Dua
 
 MIT License – feel free to use for learning and development.
 
+## Gallery
+
+<img width="1920" height="1038" alt="image" src="https://github.com/user-attachments/assets/f23d63ef-dcc3-47b7-adf4-c95cf41cbb33" />
+
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/bc9fca41-a98a-43f5-92a3-4ce5b57c138a" />
+
+<img width="1920" height="1044" alt="image" src="https://github.com/user-attachments/assets/061f6350-56f5-486b-8e1a-600b51f42e49" />
+
+<img width="1920" height="998" alt="image" src="https://github.com/user-attachments/assets/86f14671-2130-478b-9e8b-59509cf68153" />
+
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/ea10d1ef-c22c-4ac8-9ed7-c46cc7a50564" />
