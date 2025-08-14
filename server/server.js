@@ -26,6 +26,7 @@ app.get('/api/health', (req, res) => res.json({ ok: true }));
 
 const server = http.createServer(app);
 const io = socketIo(server, {
+  path: '/api/socket.io',
   cors: {
     origin: isDev ? '*' : CORS_ORIGINS,
     methods: ['GET', 'POST']

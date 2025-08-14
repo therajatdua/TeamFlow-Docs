@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getFirebaseAuth, getGoogleProvider } from '../lib/firebase';
 import './Register.css';
 

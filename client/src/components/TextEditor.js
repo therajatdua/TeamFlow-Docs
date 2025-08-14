@@ -6,8 +6,12 @@ import 'quill/dist/quill.snow.css';
 import { io } from 'socket.io-client';
 import { useParams, useNavigate } from 'react-router-dom';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
-const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || API_BASE_URL;
+const API_BASE_URL =
+  process.env.REACT_APP_API_URL ||
+  (process.env.NODE_ENV === 'production' ? window.location.origin : 'http://localhost:5001');
+const SOCKET_URL =
+  process.env.REACT_APP_SOCKET_URL ||
+  (process.env.NODE_ENV === 'production' ? window.location.origin : API_BASE_URL);
 
 Quill.register('modules/cursors', QuillCursors);
 
@@ -283,7 +287,12 @@ function TextEditor() {
       return;
     }
 
-    const s = io(SOCKET_URL);
+    const s = io(SOCKET_URL, {
+      // Use API path to improve compatibility behind /api on Vercel/NGINX
+      path: '/api/socket.io',
+      // Allow fallback polling for serverless/limited hosts
+      transports: ['websocket', 'polling']
+    });
     setSocket(s);
 
     s.emit('authenticate', token);

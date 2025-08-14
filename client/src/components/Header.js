@@ -2,7 +2,9 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import getFirebaseAuth from '../lib/firebase';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+const API_BASE_URL =
+  process.env.REACT_APP_API_URL ||
+  (process.env.NODE_ENV === 'production' ? window.location.origin : 'http://localhost:5001');
 
 function Header() {
   const navigate = useNavigate();

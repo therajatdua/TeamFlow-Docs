@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "memovault-api",
+  "name": "teamflow-docs-api",
   "builds": [
     { "src": "server.js", "use": "@vercel/node" }
   ],
