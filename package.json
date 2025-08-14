@@ -14,18 +14,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "firebase": "^12.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.17.0",
-    "quill": "^2.0.3",
-    "react-quill": "^2.0.0",
-    "socket.io": "^4.8.1",
-    "uuid": "^11.1.0"
-  },
+  "private": true,
   "devDependencies": {
     "concurrently": "^7.6.0"
   }
