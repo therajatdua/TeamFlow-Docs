@@ -21,6 +21,9 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/documents', documentRoutes);
 
+// Health check
+app.get('/api/health', (req, res) => res.json({ ok: true }));
+
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
@@ -338,4 +341,9 @@ async function findOrCreateDocument(id, userId) {
 }
 
 const PORT = process.env.PORT || 5001;
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// In Vercel's serverless, we export the app; locally we start the server
+if (process.env.VERCEL) {
+  module.exports = app;
+} else {
+  server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
